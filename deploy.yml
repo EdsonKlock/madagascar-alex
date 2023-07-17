@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo teste deploy
+      - ls
+  build:
+    commands:
+      - echo teste build
+  post_build:
+    commands:
+      - echo teste post_build
+artifacts:
+  files:
+    - target/messageUtil-1.0.jar
